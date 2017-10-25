@@ -9,7 +9,7 @@
 
 try {
     ob_start();
-    $db = new PDO("mysql:host=localhost;dbname=photos", "root", "root");
+    $db = new PDO("mysql:host=mosaic.unelabs.com;dbname=mosaic_unelabs", "mosaic_unelabs", "Bilkent11");
 } catch ( PDOException $e ){
     ob_clean();
     print $e->getMessage();
