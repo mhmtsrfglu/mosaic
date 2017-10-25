@@ -9,7 +9,7 @@
 
 try {
     ob_start();
-    $db = new PDO("mysql:host=mosaic.unelabs.com;dbname=mosaic_unelabs", "mosaic_unelabs", "Bilkent11");
+    $db = new PDO("mysql:host=eu-cdbr-west-01.cleardb.com;dbname=heroku_4cf1778fdb58598", "b51450aeed3fc6", "bfc2c232");
 } catch ( PDOException $e ){
     ob_clean();
     print $e->getMessage();
